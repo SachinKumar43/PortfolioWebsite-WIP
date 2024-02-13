@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sachin Portfolio</title>
+    <link rel="stylesheet" href="homepage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <!-- this is for the trailing cursors -->
+    <div class="cursor">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <ul class="navigation">
+      <li class="active">
+        <a href="#sec1">
+          <span class="icon"><ion-icon name="person-outline"></ion-icon></ion-icon></span>
+          <span class="text">ABOUT</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec2">
+          <span class="icon"><ion-icon name="trophy-outline"></ion-icon></ion-icon></span>
+          <span class="text">SKILLS</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec3">
+          <span class="icon"><ion-icon name="rocket-outline"></ion-icon></span>
+          <span class="text">PROJECTS</span>
+        </a>
+      </li>
+      <li>
+        <a href="#sec4">
+          <span class="icon"
+            ><ion-icon name="chatbubble-ellipses-outline"></ion-icon></span>
+          <span class="text">CONTACT</span>
+        </a>
+      </li>
+    </ul>
+    <script>
+      let list = document.querySelectorAll('.navigation li');
+      function activeLink() {
+        list.forEach((item) => 
+        item.classList.remove('active'));
+        this.classList.add('active')
+      }
+      list.forEach((item) => 
+      item.addEventListener('click', activeLink));
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <div class="home">
+      <!-- section-1 about -->
+      <div class="section1" id="sec1">
+        <!-- <div class="nav-items">
+          <div class="nav-about">about</div>
+          <div class="nav-skill">skill</div>
+          <div class="nav-project">project</div>
+          <div class="nav-contact">contact</div>
+        </div> -->
+<div class="nav-empty-space"></div>
+        <div class="contents-s1">
+          <div class="name-s1">
+            <p id="name">Sachin Kumar</p>
+          </div>
+          <div class="about-s1">
+            <p id="about">...txt...</p>
+          </div>
+          <div class="typewriter-s1">
+            <span class="auto-type"></span>
+            <!-- <li><span>Developer</span></li>
+            <li><span>Youtuber</span></li>
+            <li><span>Designer</span></li>
+            <li><span>Artist</span></li> -->
+          </div>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script>
+            var typed = new Typed(".auto-type", {
+              strings: ["Programmer", "Designer", "Gamer", "Artist"],
+              typeSpeed: 80,
+              backSpeed: 50,
+              loop: true,
+            });
+          </script>
+        </div>
+        <div class="image-s1">
+          <img src="Untitled_Artwork.png" alt="self-pot" style="height:100%;"/>
+        </div>
+      </div>
+
+      <!-- section-2 skills  -->
+      <div class="section2" id="sec2">
+        <div class="upper-s2">
+          <!-- <div class="nav-items">
+            <div class="nav-about">about</div>
+            <div class="nav-skill">skill</div>
+            <div class="nav-project">project</div>
+            <div class="nav-contact">contact</div>
+          </div> -->
+          <div class="contents-s2">
+            <div class="edu-s2">
+              <p id="edu">&nbsp &nbspEDUCATION</p>
+              <ul class="edu-list-s2">
+                <li>
+                  York University <br />North York, Canada <br />Bachelor of
+                  Science Honours in Computer Science <br />Sept 2023 – present
+                </li>
+                <li>
+                  Chitkara University <br />Rajpura, India <br />Bachelor of
+                  Engineering in Computer Science and Engineering <br />Sept
+                  2021 – June 2023
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="interest-s2">
+            <p id="interest">&nbsp &nbspINTERESTS</p>
+            <ul class="interest-list-s2">
+              <li>Programming</li>
+              <li>Web Development</li>
+              <li>3D Modelling</li>
+              <li>Animations</li>
+              <li>Digital Art</li>
+              <li>Visual Effects</li>
+            </ul>
+          </div>
+        </div>
+        <div class="skills-s2">
+          <!-- <p id="skills">skills-blank</p> -->
+          <div class="scroll" style="--t: 20s">
+            <div>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JAVASCRIPT</span>
+              <span>REACT</span>
+              <span>THREEJS</span>
+              <span>BLENDER</span>
+              <span>DA VINCI RESOLVE</span>
+              <span>PROCREATE</span>
+              <span>KRITA</span>
+            </div>
+            <div>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JAVASCRIPT</span>
+              <span>REACT</span>
+              <span>THREEJS</span>
+              <span>BLENDER</span>
+              <span>DA VINCI RESOLVE</span>
+              <span>PROCREATE</span>
+              <span>KRITA</span>
+            </div>
+          </div>
+          <div class="scroll" style="--t: 20s">
+            <div>
+              <span>JAVA</span>
+              <span>PYTHON</span>
+              <span>C</span>
+              <span>REACT-THREE-FIBER</span>
+              <span>GIT</span>
+              <span>C++</span>
+              <span>FIGMA</span>
+              <span>CANVA</span>
+              <span>MS OFFICE</span>
+            </div>
+            <div>
+              <span>JAVA</span>
+              <span>PYTHON</span>
+              <span>C</span>
+              <span>REACT-THREE-FIBER</span>
+              <span>GIT</span>
+              <span>C++</span>
+              <span>FIGMA</span>
+              <span>CANVA</span>
+              <span>MS OFFICE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section-3 projects -->
+      <div class="section3" id="sec3">
+        <div class="upper-s3">
+          <!-- <div class="nav-items">
+            <div class="nav-about">about</div>
+            <div class="nav-skill">skill</div>
+            <div class="nav-project">project</div>
+            <div class="nav-contact">contact</div>
+          </div> -->
+          <div class="contents-s3">
+            <div class="square-s3">
+              <div class="container-s3">
+                <div class="image-cube">
+                  <div class="front">
+                    <img src="images-cube/1659774132930.944.JPG" alt="1" />
+                  </div>
+                  <div class="right">
+                    <img src="images-cube/IMG_3013.JPG" alt="2" />
+                  </div>
+                  <div class="back">
+                    <img src="images-cube/image.png" alt="3" />
+                  </div>
+                  <div class="left">
+                    <img src="images-cube/IMG_3201.JPG" alt="4" />
+                  </div>
+                  <div class="top">
+                    <img src="images-cube/IMG_5627.PNG" alt="5" />
+                  </div>
+                  <div class="bottom">
+                    <img src="images-cube/Untitled_Artwork.JPG" alt="6" />
+                  </div>
+                </div>
+              </div>
+              <div class="btns">
+                <button id="prev">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button id="next">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <button id="up">
+                  <i class="fa-solid fa-arrow-up"></i>
+                </button>
+                <button id="down">
+                  <i class="fa-solid fa-arrow-down"></i>
+                </button>
+                <button id="rot">
+                  <i class="fa-solid fa-rotate"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-s3">
+          <div class="card" style="--clr: red">
+            <div class="imgBx">
+              <img src="images-cube/1659774132930.944.JPG" alt="" />
+            </div>
+            <div class="content-bx">
+              <h3>proj1</h3>
+              <p>info about proj1</p>
+              <a href="">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="--clr: yellow">
+            <div class="imgBx">
+              <img src="images-cube/image.png" alt="" />
+            </div>
+            <div class="content-bx">
+              <h3>proj2</h3>
+              <p>info about proj2</p>
+              <a href="">Explore</a>
+            </div>
+          </div>
+          <div class="card" style="--clr: blue">
+            <div class="imgBx">
+              <img src="images-cube/IMG_3013.JPG" alt="" />
+            </div>
+            <div class="content-bx">
+              <h3>proj3</h3>
+              <p>info about proj3</p>
+              <a href="">Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section-4 contact -->
+      <div class="section4" id="sec4">
+        <!-- <div class="nav-items">
+          <div class="nav-about">about</div>
+          <div class="nav-skill">skill</div>
+          <div class="nav-project">project</div>
+          <div class="nav-contact">contact</div>
+        </div> -->
+        <section>
+          <div class="contents-s4">
+            <div class="contactInfo">
+              <div>
+                <h2>Contact Info</h2>
+                <ul class="info">
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span>14 St Mark Pl, Brampton, ON L6X3W5</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-envelope"></i></span>
+                    <span>kumar043sachin@gmail.com</span>
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <span>+1 (647)870-2736</span>
+                  </li>
+                </ul>
+                <ul class="sci">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-discord"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contactForm">
+              <h2>SEND A MESSAGE</h2>
+              <div class="formBox">
+                <div class="inputBox w50">
+                  <input type="text" name="" required />
+                  <span>First Name</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="" required />
+                  <span>Last Name</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="" required />
+                  <span>Email Address</span>
+                </div>
+                <div class="inputBox w50">
+                  <input type="text" name="" required />
+                  <span>Contact Number</span>
+                </div>
+                <div class="inputBox w100">
+                  <textarea name="" required></textarea>
+                  <span>Write your message here...</span>
+                </div>
+              </div>
+              <div class="inputBox">
+                <input type="submit" value="SEND" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script-home.js"></script>
+  </body>
+</html>
